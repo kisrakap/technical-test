@@ -31,8 +31,8 @@ useEffect(() => {
     }
 })
     return (
-        <div className="p-3">
-            <table className="fluid p-0 m-2 table table-bordered" ref={tableRef}>
+        <div >
+            <table className="fluid p-0 m-2 table table-bordered rounded-pill" ref={tableRef}>
                 
             </table>
         </div>

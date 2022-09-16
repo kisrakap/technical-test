@@ -5,9 +5,9 @@ import TextError from './TextError'
 function Input (props) {
   const { label, name, ...rest } = props
   return (
-    <div className='form-control border-0'>
-      <label className='mr-5 col-3' htmlFor={name}>{label}</label>
-      <Field className="col-4 border border-grey rounded" id={name} name={name} {...rest} />
+    <div className='border-0 d-flex align-items-center m-0 mb-2 mt-2 p-0 bg-transparent p-0 m-0'>
+      <label className='col-3 rounded' htmlFor={name}>{label}</label>
+      <Field className="col-4 border border-grey rounded w-50" id={name} name={name} {...rest} />
       <ErrorMessage component={TextError} name={name} />
     </div>
   )

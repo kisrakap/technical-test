@@ -20,23 +20,23 @@ function FeeType() {
     ["6", "Service Fee", "Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text ever since", "Active", "6"],
   ]
   return (
-    <div className='bg-light pt-3 FeeType'>
+    <div className='bg-light p-3 FeeType'>
 
         <Breadcrumb>
           <Breadcrumb.Item active >Master Data Management</Breadcrumb.Item>
           <Breadcrumb.Item href='' >Fee Type</Breadcrumb.Item>
-          
         </Breadcrumb>
-        <h1>Fee Type</h1> 
-        <Row className="p-2 mb-3 d-flex align-items-center" style={{alignItems: "center"}}>
+        <h2>Fee Type</h2> 
+        <Row className="mb-3 d-flex align-items-center" style={{alignItems: "center"}}>
           <Stack direction="horizontal" className='d-flex' style={{height: '50px'}}>
-          <input className="col-2 p-2 m-2 h-75 rounded border border-grey"></input>
+          <input className="col-2 h-75 mr-5 rounded border border-grey"></input>
           
-          <p className='col-2 m-2 h-100 text-bold'
+          <div className='col-2 m-4 h-100 d-flex align-items-center text-bold'
           onClick={() => setOpen(!open)}
-          >
+          ><strong>
           Advanced Options 
-          </p>
+          </strong>
+          </div>
           <div className='flex ms-auto rounded rounded-circle align-center'>
           <i className="bi bi-download m-2 p-2 h-100 rounded rounded-circle align-center" style={{ fontSize: 30 }}></i>
           </div>
