@@ -59,12 +59,12 @@ function CreateFeeType () {
                   />
                     </Col>
                     <Col >
-                    <div className='rounded bg-light align-items-start p-5'>
+                    <div className='rounded bg-secondary align-items-start p-3'>
                       <h3>For Internal Porpuse</h3>
                       <FormikControl
-                      control='textarea'
+                      control='input'
                       type='text'
-                      label='Descriptiom'
+                      label='Fee Type Code'
                       name='feetypecode'
                     />
                     </div>
@@ -74,23 +74,40 @@ function CreateFeeType () {
                     <h3>Translation </h3>
                     <hr className="solid p-5 m-0"></hr>
                   </Row>
-                  {/* <Row>
-                    <Col>
-                      <Button>Indonesia</Button>
-                      <Button>Chinesse Simplified</Button>
+                  <Row>
+                    <Col className='col-3 m-0 p-0'> 
+                      <Row className='mb-1 pb-1 ml-1 pl-1'>
+                      <Button className='bg-tranparent text-dark border-right-0 border bg-transparent'>Indonesia</Button>
+                      </Row>
+                      <Row className='ml-1  pl-1 '>
+                      <Button className='bg-transparent text-dark border border-right-0'>Chinesse Simplified</Button>
+                      </Row>
                     </Col>
-                    <Col>
-                    <div class="card w-75">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <Col className='col-9 m-0 p-0 d-block' >
+                    <div class="card w-100 h-100 m-0 p-0">
+                      <div class="card-body w-100 h-100">
+                        <Form>
+                        <FormikControl
+                            control='input'
+                            type='text'
+                            label='File Type name'
+                            name='name'
+                          />
+                        <FormikControl
+                          control='textarea'
+                          type='text'
+                          label='Descriptiom'
+                          name='description'
+                        />
+                        </Form>
                         
                       </div>
                     </div></Col>
 
-                  </Row> */}
+                  </Row>
                 </div>
-                <button type='submit' className="border-0 rounded m-3 mt-0" disabled={!formik.isValid}>Submit</button>
+                <button type='submit' className="border-0 rounded m-2 mr-1 mt-0" disabled={!formik.isValid}>Submit</button>
+                <button className="border-dark bg-transparent rounded m-2 mt-0"> Cancel </button>
                 <div> {formik.isValid}</div>
               </Form>
             )
